@@ -12,6 +12,11 @@
 		AF116B9D21D0FA3100D15E7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF116B9B21D0FA3100D15E7E /* Main.storyboard */; };
 		AF116B9F21D0FA3200D15E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF116B9E21D0FA3200D15E7E /* Assets.xcassets */; };
 		AF116BA221D0FA3200D15E7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF116BA021D0FA3200D15E7E /* LaunchScreen.storyboard */; };
+		AF116BAA21D0FBC000D15E7E /* StretchyHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF116BA921D0FBC000D15E7E /* StretchyHeaderController.swift */; };
+		AF116BB021D1014600D15E7E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF116BAF21D1014600D15E7E /* HeaderView.swift */; };
+		AF116BB221D10AB000D15E7E /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF116BB121D10AB000D15E7E /* Extensions+UIView.swift */; };
+		AF116BB621D10CBF00D15E7E /* Simulator Screen Shot - iPhone XS Max - 2018-12-24 at 15.45.52.png in Resources */ = {isa = PBXBuildFile; fileRef = AF116BB421D10CBF00D15E7E /* Simulator Screen Shot - iPhone XS Max - 2018-12-24 at 15.45.52.png */; };
+		AF116BB721D10CBF00D15E7E /* Simulator Screen Shot - iPhone XS Max - 2018-12-24 at 15.45.49.png in Resources */ = {isa = PBXBuildFile; fileRef = AF116BB521D10CBF00D15E7E /* Simulator Screen Shot - iPhone XS Max - 2018-12-24 at 15.45.49.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		AF116B9E21D0FA3200D15E7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF116BA121D0FA3200D15E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF116BA321D0FA3200D15E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF116BA921D0FBC000D15E7E /* StretchyHeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderController.swift; sourceTree = "<group>"; };
+		AF116BAF21D1014600D15E7E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		AF116BB121D10AB000D15E7E /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		AF116BB421D10CBF00D15E7E /* Simulator Screen Shot - iPhone XS Max - 2018-12-24 at 15.45.52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone XS Max - 2018-12-24 at 15.45.52.png"; sourceTree = "<group>"; };
+		AF116BB521D10CBF00D15E7E /* Simulator Screen Shot - iPhone XS Max - 2018-12-24 at 15.45.49.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone XS Max - 2018-12-24 at 15.45.49.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +70,21 @@
 				AF116B9E21D0FA3200D15E7E /* Assets.xcassets */,
 				AF116BA021D0FA3200D15E7E /* LaunchScreen.storyboard */,
 				AF116BA321D0FA3200D15E7E /* Info.plist */,
+				AF116BA921D0FBC000D15E7E /* StretchyHeaderController.swift */,
+				AF116BAF21D1014600D15E7E /* HeaderView.swift */,
+				AF116BB121D10AB000D15E7E /* Extensions+UIView.swift */,
+				AF116BB321D10C8B00D15E7E /* SimulatorScreenShot */,
 			);
 			path = StretchyHeaderCollectionViewCells;
+			sourceTree = "<group>";
+		};
+		AF116BB321D10C8B00D15E7E /* SimulatorScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				AF116BB521D10CBF00D15E7E /* Simulator Screen Shot - iPhone XS Max - 2018-12-24 at 15.45.49.png */,
+				AF116BB421D10CBF00D15E7E /* Simulator Screen Shot - iPhone XS Max - 2018-12-24 at 15.45.52.png */,
+			);
+			path = SimulatorScreenShot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +147,8 @@
 			files = (
 				AF116BA221D0FA3200D15E7E /* LaunchScreen.storyboard in Resources */,
 				AF116B9F21D0FA3200D15E7E /* Assets.xcassets in Resources */,
+				AF116BB621D10CBF00D15E7E /* Simulator Screen Shot - iPhone XS Max - 2018-12-24 at 15.45.52.png in Resources */,
+				AF116BB721D10CBF00D15E7E /* Simulator Screen Shot - iPhone XS Max - 2018-12-24 at 15.45.49.png in Resources */,
 				AF116B9D21D0FA3100D15E7E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF116BAA21D0FBC000D15E7E /* StretchyHeaderController.swift in Sources */,
 				AF116B9A21D0FA3100D15E7E /* ViewController.swift in Sources */,
 				AF116B9821D0FA3100D15E7E /* AppDelegate.swift in Sources */,
+				AF116BB021D1014600D15E7E /* HeaderView.swift in Sources */,
+				AF116BB221D10AB000D15E7E /* Extensions+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
