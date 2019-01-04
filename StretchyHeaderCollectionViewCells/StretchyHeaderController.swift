@@ -16,7 +16,7 @@ class StretchyHeaderController: UICollectionViewController, UICollectionViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ 
         setupCollectionViewLayout()
         setupCollectionView()
     }
