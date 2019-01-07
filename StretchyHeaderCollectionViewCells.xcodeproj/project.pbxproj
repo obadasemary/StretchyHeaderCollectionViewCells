@@ -20,7 +20,7 @@
 		AF116BBD21D1101F00D15E7E /* stretchy_header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF116BBC21D1101F00D15E7E /* stretchy_header.jpg */; };
 		AF35836821E3903C00D03C9C /* Simulator Screen Shot - iPhone XS Max - 2019-01-07 at 16.48.25.png in Resources */ = {isa = PBXBuildFile; fileRef = AF35836721E3903C00D03C9C /* Simulator Screen Shot - iPhone XS Max - 2019-01-07 at 16.48.25.png */; };
 		AF35836A21E3904100D03C9C /* Simulator Screen Shot - iPhone XS Max - 2019-01-07 at 16.48.20.png in Resources */ = {isa = PBXBuildFile; fileRef = AF35836921E3904100D03C9C /* Simulator Screen Shot - iPhone XS Max - 2019-01-07 at 16.48.20.png */; };
-		AF77FB0F21DFB9CA0020E263 /* StretchyHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF77FB0E21DFB9CA0020E263 /* StretchyHeaderLayout.swift */; };
+		AF35836C21E390FC00D03C9C /* StretchyHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35836B21E390FC00D03C9C /* StretchyHeaderLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 		AF116BBC21D1101F00D15E7E /* stretchy_header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stretchy_header.jpg; sourceTree = "<group>"; };
 		AF35836721E3903C00D03C9C /* Simulator Screen Shot - iPhone XS Max - 2019-01-07 at 16.48.25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone XS Max - 2019-01-07 at 16.48.25.png"; sourceTree = "<group>"; };
 		AF35836921E3904100D03C9C /* Simulator Screen Shot - iPhone XS Max - 2019-01-07 at 16.48.20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone XS Max - 2019-01-07 at 16.48.20.png"; sourceTree = "<group>"; };
-		AF77FB0E21DFB9CA0020E263 /* StretchyHeaderLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StretchyHeaderLayout.swift; path = "StretchyHeaderCollectionViewCells/New Group/StretchyHeaderLayout.swift"; sourceTree = SOURCE_ROOT; };
+		AF35836B21E390FC00D03C9C /* StretchyHeaderLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StretchyHeaderLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,6 @@
 		AF116B9621D0FA3100D15E7E /* StretchyHeaderCollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				AFF84BDF21E3889C00C7A1BD /* Custom */,
 				AF116B9721D0FA3100D15E7E /* AppDelegate.swift */,
 				AF116B9921D0FA3100D15E7E /* ViewController.swift */,
 				AF116B9B21D0FA3100D15E7E /* Main.storyboard */,
@@ -80,6 +79,7 @@
 				AF116BA021D0FA3200D15E7E /* LaunchScreen.storyboard */,
 				AF116BA321D0FA3200D15E7E /* Info.plist */,
 				AF116BA921D0FBC000D15E7E /* StretchyHeaderController.swift */,
+				AF35836B21E390FC00D03C9C /* StretchyHeaderLayout.swift */,
 				AF116BAF21D1014600D15E7E /* HeaderView.swift */,
 				AF116BB121D10AB000D15E7E /* Extensions+UIView.swift */,
 				AF116BB321D10C8B00D15E7E /* SimulatorScreenShot */,
@@ -97,15 +97,6 @@
 				AF35836921E3904100D03C9C /* Simulator Screen Shot - iPhone XS Max - 2019-01-07 at 16.48.20.png */,
 			);
 			path = SimulatorScreenShot;
-			sourceTree = "<group>";
-		};
-		AFF84BDF21E3889C00C7A1BD /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				AF77FB0E21DFB9CA0020E263 /* StretchyHeaderLayout.swift */,
-			);
-			name = Custom;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,9 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF35836C21E390FC00D03C9C /* StretchyHeaderLayout.swift in Sources */,
 				AF116BAA21D0FBC000D15E7E /* StretchyHeaderController.swift in Sources */,
 				AF116B9A21D0FA3100D15E7E /* ViewController.swift in Sources */,
-				AF77FB0F21DFB9CA0020E263 /* StretchyHeaderLayout.swift in Sources */,
 				AF116B9821D0FA3100D15E7E /* AppDelegate.swift in Sources */,
 				AF116BB021D1014600D15E7E /* HeaderView.swift in Sources */,
 				AF116BB221D10AB000D15E7E /* Extensions+UIView.swift in Sources */,
