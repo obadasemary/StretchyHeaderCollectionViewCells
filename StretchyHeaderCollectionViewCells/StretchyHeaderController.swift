@@ -14,6 +14,8 @@ class StretchyHeaderController: UICollectionViewController, UICollectionViewDele
     fileprivate let headerId = "headerId"
     fileprivate let padding: CGFloat = 16
     
+    var headerView: HeaderView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
  
@@ -39,13 +41,27 @@ class StretchyHeaderController: UICollectionViewController, UICollectionViewDele
         collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
     }
-
+    
+    // MARK: scrollViewDidScroll
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        let contentOffsetY = scrollView.contentOffset.y
+        
+        if contentOffsetY > 0 {
+            headerView?.animator.fractionComplete = 0
+            return
+        }
+        
+        headerView?.animator.fractionComplete = abs(contentOffsetY) / 100
+    }
+    
     // MARK: UICollectionView Delegate & DataSource
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath)
+        headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as? HeaderView
         
-        return header
+        return headerView!
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
